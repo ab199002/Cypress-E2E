@@ -1,0 +1,11 @@
+{
+    "username" : "f.m@yopmail.com",
+    "password" : "Test@123",
+
+    "product" :{
+        "productName" : "macbook"
+    },
+    "messages" : {
+        "successMsg" : "Success: You have added MacBook to your shopping cart!"
+    }
+}
