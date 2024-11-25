@@ -12,6 +12,13 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             browser : firefox
+
+      - name: cypress tes  report for firefoxrun
+        uses: actions/upload-artifact@v4
+        with:
+         name: mochaawesome report for firefox
+         path: cypress/reports/html
+
   chrome-run:
     runs-on: ubuntu-22.04
     steps:
@@ -23,3 +30,8 @@ jobs:
        uses: cypress-io/github-action@v6
        with:
           browser : chrome  
+     - name: cypress tes  report for chromerun
+       uses: actions/upload-artifact@v4
+       with:
+         name: mochaawesome report for chrome
+         path: cypress/reports/html
